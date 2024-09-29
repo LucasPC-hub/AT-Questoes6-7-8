@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: pessoasapi
+  r2dbc:
+    url: r2dbc:h2:mem:///testdb
+    username: sa
+    password:
+    driverClassName: org.h2.Driver
+    schema: classpath:schema.sql
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+logging:
+  level:
+    org.springframework.r2dbc.connection: DEBUG

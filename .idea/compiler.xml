@@ -7,11 +7,17 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="PessoasAPI" />
+        <module name="ConsumirApi" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ConsumerAPI" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ConsumerAPI" options="-parameters" />
+      <module name="ConsumirApi" options="-parameters" />
       <module name="PessoasAPI" options="-parameters" />
     </option>
   </component>
