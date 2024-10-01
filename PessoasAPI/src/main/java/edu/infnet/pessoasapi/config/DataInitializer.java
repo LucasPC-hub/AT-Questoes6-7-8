@@ -17,5 +17,6 @@ public class DataInitializer implements CommandLineRunner {
         pessoaRepository.save(new Pessoa(null, "Pessoa 1")).block();
         pessoaRepository.save(new Pessoa(null, "Pessoa 2")).block();
         pessoaRepository.save(new Pessoa(null, "Pessoa 3")).block();
+        System.out.println("3 pessoas criadas");
     }
 }
