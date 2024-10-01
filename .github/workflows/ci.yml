@@ -29,8 +29,8 @@ jobs:
 
       - name: Build da imagem Docker
         run: docker build -t pessoasapi .
-        working-directory: ./src/main/java/edu/infnet/pessoasapi
+        working-directory: PessoasAPI
 
       - name: Executar testes com Maven
         run: mvn test
-        working-directory: ./src/main/java/edu/infnet/consumirapi
+        working-directory: ConsumirApi
