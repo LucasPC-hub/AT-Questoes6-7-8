@@ -21,7 +21,7 @@ WORKDIR /app
 COPY --from=build /app/target/PessoasAPI-0.0.1-SNAPSHOT.jar app.jar
 
 # Make port 8080 available to the world outside this container
-EXPOSE 8080
+EXPOSE 8080:8080
 
 # Run the jar file
 ENTRYPOINT ["java", "-jar", "app.jar"]
